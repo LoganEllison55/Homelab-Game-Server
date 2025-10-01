@@ -1,0 +1,73 @@
+# 🖥️Guide To Setup The Home Server Project – Minecraft with AMP on Ubuntu
+
+This project demonstrates how I set up a self-hosted **Ubuntu-based home server** running a **Minecraft Java Edition server** managed through AMP (Application Management Panel).
+
+---
+
+## 🔹 Overview
+
+- **OS:** Ubuntu Server 
+- **Access:** SSH & Webmin 
+- **Game Panel:** AMP (CubeCoders)
+- **Game Hosted:** Minecraft Java & Bedrock Edition
+- **Extras:** Expandable to other servers (Valheim, ARK, etc.) via AMP
+
+#Step 1: Update & Upgrade Ubuntu
+
+sudo apt update && sudo apt upgrade -y
+
+#Step 2: Install OpenSSH
+
+sudo apt install openssh-server -y
+
+-Find server IP:
+hostname -I
+
+-Connect from another computer:
+ssh <username>@<server-ip>
+
+#Step 3: Install Webmin
+
+wget -qO - http://www.webmin.com/jcameron-key.asc | sudo apt-key add -
+sudo add-apt-repository "deb http://download.webmin.com/download/repository sarge contrib"
+sudo apt update
+sudo apt install webmin -y
+
+-Access in browser:
+https://<server-ip>:10000
+
+#Step 4: Install AMP
+
+bash <(wget -qO- https://getamp.sh)
+
+-During setup:
+Install Java → Y
+Install SteamCMD → Y
+HTTPS → N (unless using a domain)
+Set admin username & password
+
+-Access AMP:
+http://<server-ip>:8080
+
+#Step 5: Activate AMP & Configure
+
+Enter your AMP license
+Select Standalone mode
+Login with admin credentials
+
+#Step 6: Create Minecraft Server in AMP
+
+1. AMP Dashboard → Create Instance
+2. Select Minecraft Java Edition
+3. Name your server
+4. Allocate memory (e.g., 4096 MB)
+5. Choose type: Vanilla, Paper, or Fabric
+6. Pick Minecraft version
+7. Disable Sleep Mode (keep server online)
+8. Start server → Accept EULA
+
+#Step 7:Connect to Your Server
+
+-In Minecraft:
+Multiplayer → Direct Connect
+Enter: <server-ip>:25565
