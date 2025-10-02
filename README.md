@@ -91,7 +91,7 @@ This demonstrated the importance of secure tunneling for hobbyist game servers h
 
 <img width="445" height="456" alt="Image" src="https://github.com/user-attachments/assets/137cc3cc-6a8c-437a-abab-64826e32f78a" />
 
-<img width="445" height="456" alt="Image" src="https://github.com/user-attachments/assets/a6da9192-1a95-498d-b187-915d955eddaf" />
+<img width="979" height="513" alt="Image" src="https://github.com/user-attachments/assets/a6da9192-1a95-498d-b187-915d955eddaf" />
 
 ---
 
