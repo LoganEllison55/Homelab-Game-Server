@@ -89,7 +89,8 @@ This demonstrated the importance of secure tunneling for hobbyist game servers h
 
 ## Screenshots (Optional)
 
-_(You can add screenshots of AMP dashboard, Webmin interface, or Playit.gg tunnel status here to visually showcase your work.)_
+<img width="445" height="456" alt="Image" src="https://github.com/user-attachments/assets/137cc3cc-6a8c-437a-abab-64826e32f78a" />
+![Image](https://github.com/user-attachments/assets/600f71da-1eed-47ad-9561-f650fe63c67f)
 
 ---
 
